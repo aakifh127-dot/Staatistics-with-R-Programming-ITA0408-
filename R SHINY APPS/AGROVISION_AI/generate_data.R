@@ -1,0 +1,7 @@
+# Regenerates data/sample_agriculture.csv (600 simulated records). Run: source("generate_data.R")
+source("R/config.R"); source("R/data_generator.R"); source("R/helpers.R")
+suppressPackageStartupMessages({ library(dplyr); library(readr) })
+dir.create("data", showWarnings = FALSE)
+d <- generate_sample_data(seed = 2025)
+write_csv(d, file.path("data", "sample_agriculture.csv"))
+cat("Wrote", nrow(d), "rows to data/sample_agriculture.csv\n")

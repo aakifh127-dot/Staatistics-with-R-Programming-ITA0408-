@@ -1,0 +1,54 @@
+/* AGROVISION AI - precision agriculture theme */
+:root { --forest:#1B5E20; --emerald:#2E7D32; --leaf:#43A047; --mint:#E8F5E9; --earth:#8D6E63; --sand:#F5F1EA; --ink:#263238; }
+body, .content-wrapper, .right-side { background:#F7F9F5 !important; font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); }
+
+/* header + sidebar */
+.skin-green .main-header .logo, .skin-green .main-header .navbar { background:var(--forest) !important; }
+.skin-green .main-header .logo { font-weight:700; letter-spacing:.06em; }
+.skin-green .main-header .logo:hover { background:var(--emerald) !important; }
+.skin-green .main-sidebar { background:#14331A !important; }
+.skin-green .sidebar-menu > li > a { color:#CFE8D2; padding:11px 15px; }
+.skin-green .sidebar-menu > li.active > a, .skin-green .sidebar-menu > li:hover > a { background:var(--emerald); color:#fff; border-left-color:#A5D6A7; }
+.sidebar-filters { padding:10px 15px 20px; color:#CFE8D2; }
+.sidebar-filters h5 { font-size:11px; letter-spacing:.12em; color:#A5D6A7; margin:14px 0 8px; }
+.sidebar-filters label { color:#CFE8D2; font-weight:500; font-size:12px; }
+.sidebar-filters .form-control, .sidebar-filters .btn-default { font-size:12px; }
+
+/* boxes */
+.box { border-top:0; border-radius:6px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+.box.box-solid.box-success > .box-header { background:var(--emerald); color:#fff; border-radius:6px 6px 0 0; }
+.box-header .box-title { font-size:14px; font-weight:600; }
+.btn-success { background:var(--emerald); border-color:var(--forest); }
+.btn-success:hover { background:var(--forest); }
+
+/* KPI cards */
+.kpi-card { display:flex; align-items:center; background:#fff; border-radius:6px; padding:14px 16px; margin-bottom:15px;
+            box-shadow:0 1px 4px rgba(0,0,0,.08); border-left:5px solid var(--leaf); min-height:84px; }
+.kpi-icon { font-size:26px; color:var(--emerald); width:46px; }
+.kpi-value { font-size:22px; font-weight:700; color:var(--forest); line-height:1.1; }
+.kpi-label { font-size:12px; color:#607D8B; text-transform:uppercase; letter-spacing:.05em; }
+.kpi-sub { font-size:11px; color:var(--earth); }
+
+/* sensor cards */
+.sensor-card { background:#fff; border-radius:6px; padding:12px 14px; margin-bottom:14px; border-top:4px solid var(--leaf); box-shadow:0 1px 4px rgba(0,0,0,.08); }
+.sensor-head { font-size:12px; color:#607D8B; text-transform:uppercase; letter-spacing:.05em; }
+.sensor-head i { margin-right:6px; color:var(--emerald); }
+.sensor-val { font-size:26px; font-weight:700; color:var(--forest); }
+.sensor-unit { font-size:12px; color:#78909C; margin-left:4px; font-weight:400; }
+.badge-status { display:inline-block; font-size:11px; padding:2px 8px; border-radius:10px; background:#C8E6C9; color:var(--forest); font-weight:600; }
+.sim-tag { font-size:10px; color:#90A4AE; margin-left:8px; font-style:italic; }
+.status-warning { border-top-color:#F9A825; } .status-warning .badge-status { background:#FFF3C4; color:#8A6100; }
+.status-critical { border-top-color:#C62828; } .status-critical .badge-status { background:#FFCDD2; color:#B71C1C; }
+
+/* banners and notes */
+.sim-banner { background:#FFF8E1; border:1px solid #FFE082; color:#6D4C00; padding:8px 14px; margin:0 0 14px; border-radius:6px; font-size:12px; }
+.note-box { background:var(--sand); border-left:4px solid var(--earth); padding:8px 12px; margin-bottom:12px; font-size:12px; border-radius:4px; }
+.irr-result { background:var(--mint); padding:12px 16px; border-radius:6px; margin-top:10px; }
+.irr-result h4 { margin-top:0; color:var(--forest); font-weight:700; }
+.msg-ok { color:var(--forest); font-size:12px; } .msg-err { color:#B71C1C; font-size:12px; }
+.msg-ok p, .msg-err p { margin:2px 0; }
+
+/* tables */
+table.dataTable thead th { background:var(--mint); color:var(--forest); }
+.nav-tabs-custom > .nav-tabs > li.active { border-top-color:var(--emerald); }
+@media (max-width: 767px) { .kpi-value { font-size:18px; } .sensor-val { font-size:20px; } }
